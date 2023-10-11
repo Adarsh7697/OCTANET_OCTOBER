@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3) , rgba(0,0,0,0.1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: images 10s infinite linear;
+}
+
+@keyframes images {
+    0%{
+        background-image: url(images/golden-temple.jpg);
+    }
+    20% {
+        background-image: url(images/badrinath\ temple3.jpg);
+    }
+    40% {
+        background-image: url(images/PTI04-22-2023-000476B-0_1682241682155_1682241855205.avif);
+    }
+    60% {
+        background-image: url(images/Rameshwaram-Temple_22nd-Nov.webp);
+    }
+    80% {
+        background-image: url(images/somnathtemple.avif);
+    }
+    100% {
+        background-image: url(images/Kashi-Vishwanath-Dham-1-1024x639.png);
+    }
+}
+
+nav {
+    height: 15vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav .menu a:hover{
+    color :sandybrown;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    width: 25%;
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+}
+
+section h1 {
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px 0px 20px 0px;
+}
+
+section p {
+    font-size: 25px;
+    color: white;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section .one{
+    /* background-color: rgb(222, 18, 18); */
+    background: white;
+    color: #000;
+}
+
+section .two {
+    background: #00b894;
+    color: white;
+}
+
+.one:hover {
+    color : green;
+}
+
+.two:hover {
+    color: blue;
+}
+
+.changecontain::after {
+    content: '';
+    animation: changeText 10s infinite linear;
+    color: cyan;
+}
+
+@keyframes changeText {
+    0%{
+        content: "GOLDEN TEMPLE";
+    }
+    20% {
+        content: "BADRINATH TEMPLE";
+    }
+    40% {
+        content: "KEDARNATH TEMPLE";
+    }
+    60% {
+        content: "RAMESHWARAM TEMPLE";
+    }
+    80% {
+        content: "SOMNATH TEMPLE";
+    }
+    100% {
+        content: "KASHI VISHWANATH TEMPLE";
+    }
+}
